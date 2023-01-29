@@ -1,0 +1,15 @@
+
+.header-div{
+    margin-top: 10px;
+    color:red;
+    text-align: center;
+    border-bottom:1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:400px){
+    .header-div{
+        font-size: 13px;
+    }
+}

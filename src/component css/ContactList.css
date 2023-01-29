@@ -1,0 +1,42 @@
+.container {
+  margin-top: 10px;
+}
+.div1 {
+  overflow: auto;
+}
+#cl {
+  padding: 5px 20px;
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid green;
+}
+
+#add-contact-btn {
+  color: white;
+  background-color: blue;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid blue;
+  border-radius: 10px;
+  float: right;
+  margin: 5px 10px;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .contact-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+}

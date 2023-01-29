@@ -1,0 +1,42 @@
+.contact-card {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 10px 5px;
+  margin: 10px 10px;
+  word-break: break-all;
+}
+
+.div-icon {
+  overflow: auto;
+  margin: 5px;
+}
+
+.update-icon,
+.save-icon {
+  width: 25px;
+  float: right;
+  margin-left: 10px;
+}
+.del-icon {
+  float: right;
+  margin-left: 10px;
+}
+
+h4 {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.name-input,
+.email-input {
+  border-radius: 5px;
+  margin: 5px 5px;
+  display: block;
+
+  font-size: 17px;
+  padding: 5px 10px;
+}

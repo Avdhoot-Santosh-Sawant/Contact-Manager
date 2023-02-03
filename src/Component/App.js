@@ -3,12 +3,9 @@ import React from "react"
 import { useState, useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import '../component css/app.css'
-
 import Header from './Header'
 import AddContact from './AddContact'
 import ContactList from './ContactList'
-// import ContactDetail from "./ContactDetail"
-// import Footer from './Footer'
 
 const getContactData = () => {
   const rd = JSON.parse(localStorage.getItem("contacts"))
@@ -49,7 +46,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<ContactList contacts={contacts} updateContact={updateContact} />} />
             <Route path="/add" exact element={<AddContact addContactHandler={addContactHandler} len={contacts.length} />} />
-            {/* <Route path="/ContactDeatil:id" exact element={<ContactDetail contacts={contacts} />} /> */}
+
           </Routes>
         </Router>
       </div>

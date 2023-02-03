@@ -21,9 +21,9 @@ const AddContact = (props) => {
       alert("Please enter valid mobile number !")
       return;
     }
-    let id = props.len + 1;
+
     props.addContactHandler({
-      id, name, email, mobile
+      name, email, mobile
     });
     window.history.back()
 

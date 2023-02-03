@@ -20,7 +20,8 @@
 .data,
 .d {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .name-input,
@@ -42,7 +43,7 @@ a {
 
 .div-icon {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 10px;
   padding: 2px;
 }
@@ -77,5 +78,12 @@ a {
     flex-direction: row;
     overflow-x: auto;
     gap: 10px !important;
+  }
+
+  .data,
+  .d {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
   }
 }

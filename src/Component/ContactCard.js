@@ -6,7 +6,7 @@ function ContactCard(props) {
 
   const [name, setName] = useState(props.contact.name);
   const [email, setEmail] = useState(props.contact.email);
-  const [mobile, setMobile] = useState(props.contact.mobile);
+  const [mobile, setMobile] = useState(props.contact.mobile || "");
 
   const updateRef = useRef()
   const saveRef = useRef()
@@ -34,6 +34,11 @@ function ContactCard(props) {
     }
   }, [editable])
 
+  useEffect(() => {
+    setName(props.contact.name)
+    setEmail(props.contact.email)
+    setMobile(props.contact.mobile || " ")
+  }, [props])
 
 
   const deleteContact = (id) => {

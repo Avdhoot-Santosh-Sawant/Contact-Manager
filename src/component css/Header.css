@@ -1,15 +1,36 @@
-
-.header-div{
-    margin-top: 10px;
-    color:red;
-    text-align: center;
-    border-bottom:1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+#header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+  border-bottom: 2px solid white;
+  position: relative;
+  border-top: 2px solid white;
+  background-color: black;
 }
 
-@media screen and (max-width:400px){
-    .header-div{
-        font-size: 13px;
-    }
+#h {
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  text-shadow: 2px 3px 2px rgb(88, 77, 77);
+  letter-spacing: 1px;
+}
+
+#linkedin {
+  display: inline-block;
+  padding: 9px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  #h {
+    font-size: x-large;
+  }
 }

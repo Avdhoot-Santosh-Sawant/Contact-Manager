@@ -1,42 +1,81 @@
 .contact-card {
-  border: 1px solid black;
   border-radius: 10px;
   padding: 10px 10px 5px;
-  margin: 10px 10px;
   word-break: break-all;
+  background-color: white;
 }
 
-.div-icon {
-  overflow: auto;
-  margin: 5px;
+.info {
+  display: flex;
+  overflow-x: auto;
+  flex-direction: column;
+  gap: 10px !important;
 }
 
-.update-icon,
-.save-icon {
-  width: 25px;
-  float: right;
-  margin-left: 10px;
-}
-.del-icon {
-  float: right;
-  margin-left: 10px;
+.avtar {
+  width: 40px;
+  border-radius: 50%;
 }
 
-h4 {
-  color: black !important;
-  text-decoration: none !important;
+.data,
+.d {
+  color: black;
+  font-size: 18px;
+}
+
+.name-input,
+.email-input,
+.number-input {
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 5px 5px;
+  display: block;
+  font-size: 16px;
+  padding: 5px 10px;
+  display: inline-block;
+  width: 90%;
 }
 
 a {
   text-decoration: none !important;
 }
 
-.name-input,
-.email-input {
-  border-radius: 5px;
-  margin: 5px 5px;
-  display: block;
+.div-icon {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding: 2px;
+}
 
-  font-size: 17px;
-  padding: 5px 10px;
+.update-icon,
+.save-icon,
+.del-icon {
+  display: inline-block;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.update-icon {
+  padding: 4px;
+  background-color: #60c011;
+}
+
+.del-icon {
+  padding: 3px;
+  background-color: red;
+}
+
+.save-icon {
+  padding: 3px;
+  background-color: yellow;
+}
+
+@media screen and (min-width: 350px) {
+  .info {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px !important;
+  }
 }

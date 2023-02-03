@@ -5,9 +5,6 @@ import '../component css/ContactList.css'
 
 const ContactList = function (props) {
 
-    // const route_addContact=()=>{
-    //     window.location.href+="add"
-    // };
 
     const updateList = (id) => {
         const newList = props.contacts.filter((contact, index) => {
@@ -30,37 +27,43 @@ const ContactList = function (props) {
 
     return (
         <>
-            <div style={{overflow:"auto"}}>
-                <Link to="/add">
-                    <button id="add-contact-btn" >Add Contact</button>
-                </Link>
-            </div>
-
-
-            <div className="container">
-
-                <div className="div1">
-
-                    <h2 id="cl">Contact list</h2>
+            <div className="window">
+                <div style={{ overflow: "auto" }}>
+                    <Link to="/add">
+                        <button id="add-contact-btn" >Add Contact</button>
+                    </Link>
                 </div>
 
 
 
-                <div className="contact-list">
+                <div className="container">
 
-                    {
-                        props.contacts.map((contact, index) => {
-                            return (<ContactCard id={index} contact={contact} updateList={updateList} saveContactChange={saveContactChange} />);
-                        })
-                    }
+                    <div className="div1">
+                        <input placeholder="enter name" type={'text'} id='in' />
+                        <button>Search</button>
+                    </div>
+
+
+
+                    <div className="contact-list">
+
+                        {
+                            props.contacts.map((contact, index) => {
+                                return (<ContactCard id={index} contact={contact} updateList={updateList} saveContactChange={saveContactChange} />);
+                            })
+                        }
+
+                    </div>
+
+
+
+
 
                 </div>
 
 
-
-
-
             </div>
+
 
 
         </>

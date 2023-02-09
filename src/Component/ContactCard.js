@@ -60,7 +60,6 @@ function ContactCard(props) {
       alert('pPease, Enter valid mobile number !')
       return;
     }
-    console.log(name, email, mobile);
     props.saveContactChange(props.id, name, email, mobile);
     setEditable(false)
   }
@@ -73,7 +72,7 @@ function ContactCard(props) {
         <div >
           <div className='info'>
             <div>
-              <img alt="..avtar" src={'avtar.png'} className='avtar' />
+              <img alt=".Avtar" src='./avtar.png' className='avtar' />
             </div>
             <div ref={data} className='data'>
 
@@ -96,15 +95,15 @@ function ContactCard(props) {
         <div className="div-icon">
 
           <i className="update-icon" onClick={() => { updateContact() }} ref={updateRef} title='update'>
-            <img src="update.png" alt=".." width={'25px'} />
+            <img src="./update.png" alt=".." width={'25px'} />
           </i>
 
           <i className="save-icon" onClick={() => { saveUpdate() }} ref={saveRef} title='save'>
-            <img src={'save.png'} alt=".." width={'25px'} />
+            <img src={'./save.png'} alt=".." width={'25px'} />
           </i>
 
           <i className="del-icon" onClick={() => { deleteContact(props.id) }} title='delete'>
-            <img src={'delete.png'} alt=".." width="25px" />
+            <img src={'./delete.png'} alt=".." width="25px" />
           </i>
 
         </div>

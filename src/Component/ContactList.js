@@ -19,7 +19,7 @@ const ContactList = function (props) {
                 return con
             })
 
-            console.log(list)
+
 
             const s = list.filter((con, index) => {
                 return con.name.includes(search.toLowerCase())
@@ -35,7 +35,6 @@ const ContactList = function (props) {
         const newList = props.contacts.filter((contact, index) => {
             return index !== id;
         })
-        console.log(newList)
         props.updateContact(newList)
     }
 

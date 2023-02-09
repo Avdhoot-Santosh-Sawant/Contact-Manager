@@ -1,7 +1,8 @@
 
 import React from "react"
 import { useState, useEffect } from "react"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from "react-router-dom";
 import '../component css/app.css'
 import Header from './Header'
 import AddContact from './AddContact'
@@ -42,13 +43,13 @@ function App() {
       <Header />
 
       <div id="app">
-        <Router>
+        <HashRouter>
           <Routes>
             <Route path="/" exact element={<ContactList contacts={contacts} updateContact={updateContact} />} />
             <Route path="/add" exact element={<AddContact addContactHandler={addContactHandler} len={contacts.length} />} />
 
           </Routes>
-        </Router>
+        </HashRouter>
       </div>
 
     </>

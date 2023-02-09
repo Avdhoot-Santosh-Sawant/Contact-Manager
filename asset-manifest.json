@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/Contact-Manager/static/css/main.1d260a94.css",
-    "main.js": "/Contact-Manager/static/js/main.05dd2b42.js",
+    "main.js": "/Contact-Manager/static/js/main.2a88cc56.js",
+    "static/media/avtar.png": "/Contact-Manager/static/media/avtar.4478e5f654523562bdbe.png",
+    "static/media/linkedin.png": "/Contact-Manager/static/media/linkedin.44e6d9d6f2bada146f09.png",
     "index.html": "/Contact-Manager/index.html",
     "main.1d260a94.css.map": "/Contact-Manager/static/css/main.1d260a94.css.map",
-    "main.05dd2b42.js.map": "/Contact-Manager/static/js/main.05dd2b42.js.map"
+    "main.2a88cc56.js.map": "/Contact-Manager/static/js/main.2a88cc56.js.map"
   },
   "entrypoints": [
     "static/css/main.1d260a94.css",
-    "static/js/main.05dd2b42.js"
+    "static/js/main.2a88cc56.js"
   ]
 }

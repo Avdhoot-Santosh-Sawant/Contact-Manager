@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../component css/Contactcard.css";
+import avtar from '../images/avtar.png'
+import update from '../images/update.png'
+import save from '../images/save.png'
+import deleteimg from '../images/delete.png'
 
 function ContactCard(props) {
   const [editable, setEditable] = useState(false);
@@ -72,7 +76,7 @@ function ContactCard(props) {
         <div >
           <div className='info'>
             <div>
-              <img alt=".Avtar" src='./avtar.png' className='avtar' />
+              <img alt=".Avtar" src={avtar} className='avtar' />
             </div>
             <div ref={data} className='data'>
 
@@ -95,15 +99,15 @@ function ContactCard(props) {
         <div className="div-icon">
 
           <i className="update-icon" onClick={() => { updateContact() }} ref={updateRef} title='update'>
-            <img src="./update.png" alt=".." width={'25px'} />
+            <img src={update} alt=".." width={'25px'} />
           </i>
 
           <i className="save-icon" onClick={() => { saveUpdate() }} ref={saveRef} title='save'>
-            <img src={'./save.png'} alt=".." width={'25px'} />
+            <img src={save} alt=".." width={'25px'} />
           </i>
 
           <i className="del-icon" onClick={() => { deleteContact(props.id) }} title='delete'>
-            <img src={'./delete.png'} alt=".." width="25px" />
+            <img src={deleteimg} alt=".." width="25px" />
           </i>
 
         </div>
